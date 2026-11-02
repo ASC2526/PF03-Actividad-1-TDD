@@ -25,4 +25,39 @@ describe('fibonacci(n)', () => {
         expect(resultado).toBe(3);
     });
 
+        it('Fibonacci de 5 debe ser 5', () => {
+        let resultado = fibonacci(5);
+        expect(resultado).toBe(5);
+    });
+
+    it('Fibonacci de 10 debe ser 55', () => {
+        let resultado = fibonacci(10);
+        expect(resultado).toBe(55);
+    });
+
+    it('Fibonacci de 78 debe ser 8944394323791464', () => {
+        let resultado = fibonacci(78);
+        expect(resultado).toBe(8944394323791464);
+    });
+
+        it('debe dar error si n es negativo', () => {
+        expect(() => fibonacci(-1))
+            .toThrow('solo números enteros entre 0 y 78');
+    });
+
+    it('debe dar error si n es mayor que 78', () => {
+        expect(() => fibonacci(79))
+            .toThrow('solo números enteros entre 0 y 78');
+    });
+
+    it('debe dar error si n tiene decimales', () => {
+        expect(() => fibonacci(2.5))
+            .toThrow('solo números enteros entre 0 y 78');
+    });
+
+    it('debe dar error si n es un texto', () => {
+        expect(() => fibonacci("5"))
+            .toThrow('solo números enteros entre 0 y 78');
+    });
+
 });
