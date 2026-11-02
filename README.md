@@ -2,15 +2,7 @@
 
 ## Objetivo
 
-Desarrollar las funciones Fibonacci y validación de PIN mediante TDD, utilizando Vitest para las pruebas y GitHub Actions para la integración continua.
-
-## Tecnologías
-
-- Node.js 24 LTS
-- JavaScript ES Modules
-- Vitest
-- Git y GitHub
-- GitHub Actions
+Desarrollar las funciones Fibonacci y validación de PIN mediante TDD, utilizando Vitest y GitHub Actions.
 
 ## Integrantes
 
@@ -28,16 +20,3 @@ Desarrollar las funciones Fibonacci y validación de PIN mediante TDD, utilizand
 - Usuario de GitHub: Hecserbar2512
 - Creación de los tests de esPinValido(pin).
 - Implementación y refactorización de fibonacci(n).
-
-## Instalación
-
-npm ci
-
-## Ejecutar las pruebas
-
-npm test
-
-## Funciones
-
-- fibonacci(n): calcula un término de la sucesión de Fibonacci.
-- esPinValido(pin): valida un PIN de 4 o 6 dígitos.
