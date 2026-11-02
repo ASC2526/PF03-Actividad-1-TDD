@@ -1,0 +1,28 @@
+import { describe, it, expect } from 'vitest';
+import { fibonacci } from '../src/fibonacci.js';
+
+describe('fibonacci(n)', () => {
+
+    it('debe devolver 0 cuando n es 0', () => {
+        expect(fibonacci(0)).toBe(0);
+    });
+
+    it('debe devolver 1 cuando n es 1', () => {
+        expect(fibonacci(1)).toBe(1);
+    });
+
+    it('debe devolver 1 cuando n es 2', () => {
+        expect(fibonacci(2)).toBe(1);
+    });
+
+    it('Fibonacci de 3 debe ser 2', () => {
+        let resultado = fibonacci(3);
+        expect(resultado).toBe(2);
+    });
+
+    it('Fibonacci de 4 debe ser 3', () => {
+        let resultado = fibonacci(4);
+        expect(resultado).toBe(3);
+    });
+
+});
