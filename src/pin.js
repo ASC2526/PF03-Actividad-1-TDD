@@ -14,13 +14,11 @@ export function esPinValido(pin) {
         }
     }
 
-    let iguales = true;
-
     for (let i = 1; i < pin.length; i++) {
         if (pin[i] !== pin[0]) {
-            iguales = false;
+            return true;
         }
     }
 
-    return !iguales;
+    return false;
 }
